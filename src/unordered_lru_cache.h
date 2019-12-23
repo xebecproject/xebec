@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Dash Core developers
+// Copyright (c) 2019 The Xebec Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DASH_UNORDERED_LRU_CACHE_H
-#define DASH_UNORDERED_LRU_CACHE_H
+#ifndef XEBEC_UNORDERED_LRU_CACHE_H
+#define XEBEC_UNORDERED_LRU_CACHE_H
 
 #include <unordered_map>
 
@@ -107,4 +107,4 @@ private:
     }
 };
 
-#endif // DASH_UNORDERED_LRU_CACHE_H
+#endif // XEBEC_UNORDERED_LRU_CACHE_H

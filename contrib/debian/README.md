@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package dashd/dash-qt
-for Debian-based Linux systems. If you compile dashd/dash-qt yourself, there are some useful files here.
+This directory contains files used to package xebecd/xebec-qt
+for Debian-based Linux systems. If you compile xebecd/xebec-qt yourself, there are some useful files here.
 
-## dash: URI support ##
+## xebec: URI support ##
 
 
-dash-qt.desktop  (Gnome / Open Desktop)
+xebec-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install dash-qt.desktop
+	sudo desktop-file-install xebec-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your dash-qt binary to `/usr/bin`
-and the `../../share/pixmaps/dash128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your xebec-qt binary to `/usr/bin`
+and the `../../share/pixmaps/xebec128.png` to `/usr/share/pixmaps`
 
-dash-qt.protocol (KDE)
+xebec-qt.protocol (KDE)
 

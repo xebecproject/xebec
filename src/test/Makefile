@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. dash_test
+	$(MAKE) -C .. xebec_test
 clean:
-	$(MAKE) -C .. dash_test_clean
+	$(MAKE) -C .. xebec_test_clean
 check:
-	$(MAKE) -C .. dash_test_check
+	$(MAKE) -C .. xebec_test_check
