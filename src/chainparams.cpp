@@ -1,7 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
-// Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2019 The Xebec Core developers
+// Copyright (c) 2014-2019 The Xebec Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,15 +36,15 @@ const int32_t MasternodeMinimumConfirmations = 8;
 const int32_t GovernanceFilterElements = 20000;
 const int32_t GovernanceMinQuorum = 10;
 const int32_t SubsidyHalvingInterval = 210240; // Note: actual number of blocks per calendar year with DGW v3 is ~200700 (for example 449750 - 249050)
-const int32_t MasternodePaymentsStartBlock = 100000; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
-const int32_t MasternodePaymentsIncreaseBlock = 158000; // actual historical value
+const int32_t MasternodePaymentsStartBlock = 19000; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
+const int32_t MasternodePaymentsIncreaseBlock = 19000; // actual historical value
 const int32_t MasternodePaymentsIncreasePeriod = 576*30; // 17280 - actual historical value
 const int32_t InstantSendConfirmationsRequired = 6;
 const int32_t InstantSendKeepLock = 24;
-const int32_t BudgetPaymentsStartBlock = 328008; // actual historical value
+const int32_t BudgetPaymentsStartBlock = 19008; // actual historical value
 const int32_t BudgetPaymentsCycleBlocks = 16616; // ~(60*24*30)/2.6, actual number of blocks per month is 200700 / 12 = 16725
 const int32_t BudgetPaymentsWindowBlocks = 100;
-const int32_t SuperblockStartBlock = 614820; // The block at which 12.1 goes live (end of final 12.0 budget cycle)
+const int32_t SuperblockStartBlock = 19020; // The block at which 12.1 goes live (end of final 12.0 budget cycle)
 const int32_t SuperblockCycle = 16616;
 const int32_t RuleChangeActivationThreshold = 1916; // 95% of 2016
 const int32_t MinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
@@ -258,8 +257,8 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1486252800; // Feb 5th, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517788800; // Feb 5th, 2018
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = DEPLOYMENT_START; 
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = DEPLOYMENT_TIMEOUT; 
 
         // Deployment of DIP0001
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].bit = 1;
