@@ -1,7 +1,7 @@
 Xebec Core staging tree 0.14.0
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/xebecproject/xebec.svg?branch=master)](https://travis-ci.org/xebecproject/xebec) `develop:` [![Build Status](https://travis-ci.org/xebecproject/xebec.svg?branch=develop)](https://travis-ci.org/xebecproject/xebec/branches)
+`master:` [![Build Status](https://travis-ci.org/xebecproject/xebec.svg?branch=master)](https://travis-ci.org/xebecproject/xebec) `develop:` [![Build Status](https://travis-ci.org/xebecproject/xebec.svg?branch=dev)](https://travis-ci.org/xebecproject/xebec/branches)
 
 https://www.xebec.site
 
