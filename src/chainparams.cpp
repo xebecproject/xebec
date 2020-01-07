@@ -229,7 +229,7 @@ public:
         consensus.nBudgetPaymentsCycleBlocks = BudgetPaymentsCycleBlocks;
         consensus.nBudgetPaymentsWindowBlocks = BudgetPaymentsWindowBlocks;
         consensus.nSuperblockStartBlock = SuperblockStartBlock;
-        consensus.nSuperblockStartHash = uint256S("0000000000020cb27c7ef164d21003d5d20cdca2f54dd9a9ca6d45f4d47f8aa3");
+        consensus.nSuperblockStartHash = uint256S("");
         consensus.nSuperblockCycle = SuperblockCycle;
         consensus.nGovernanceMinQuorum = GovernanceMinQuorum;
         consensus.nGovernanceFilterElements = GovernanceFilterElements;
